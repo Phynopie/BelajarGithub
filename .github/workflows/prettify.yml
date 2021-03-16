@@ -3,7 +3,7 @@ name: WorkflowA
 on: push
 jobs:
     prettify:
-      runs-on: ubuntu-latest
+        runs-on: ubuntu-latest
         steps:
           - name: Siapkan file dari repo
             uses: actions/checkout@v2
@@ -15,13 +15,12 @@ jobs:
             uses: npm run prettify
           - name: Push kembali perubahan yang telah dilakukan
             run: |
-            # Nama bot yang melakukan commit
-            git config user.name ‘Nama Bot’
-            # Email bebas tetapi valid
-            git config user.email ‘181sag@gmail.com’
-            # Tambahkan semua file yang berubah
-            git add --all
-            # Judul commit yang diinginkan
-            git commit -m ‘Automatic code format’
-            # Lakukan push
-            git push
+                git config user.name ‘Nama Bot’
+                # Email bebas tetapi valid
+                git config user.email ‘181sag@gmail.com’
+                # Tambahkan semua file yang berubah
+                git add --all
+                # Judul commit yang diinginkan
+                git commit -m ‘Automatic code format’
+                # Lakukan push
+                git push
