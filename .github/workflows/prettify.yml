@@ -10,9 +10,9 @@ jobs:
           - name: set up node js
             uses: actions/setup-node@v2.1.5
           - name: siapkan dependansi npm
-            uses: npm install
+            run: npm install
           - name: format file kode repo
-            uses: npm run prettify
+            run: npm run prettify
           - name: Push kembali perubahan yang telah dilakukan
             run: |
                 git config user.name ‘Nama Bot’
