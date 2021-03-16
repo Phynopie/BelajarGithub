@@ -1,6 +1,7 @@
 name: WorkflowA
-  on: push
-  jobs:
+
+on: push
+jobs:
     prettify:
       runs-on: ubuntu-latest
         steps:
